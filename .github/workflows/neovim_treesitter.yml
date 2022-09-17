@@ -36,6 +36,9 @@ jobs:
       - name: Install python treesitter module
         run: nvim --headless -Nu test/vader/minvimrc -c 'TSInstallSync python' -c 'q'
 
+      - name: Install rust treesitter module
+        run: nvim --headless -Nu test/vader/minvimrc -c 'TSInstallSync rust' -c 'q'
+
       - name: 'Show version'
         run: nvim --version
 
